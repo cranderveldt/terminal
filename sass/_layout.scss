@@ -1,0 +1,21 @@
+.console-container {
+  padding: rem(10);
+}
+.console-view {
+  p {
+    margin: 0 0 rem(10);
+  }
+}
+.console-action {
+  position: relative;
+  top: rem(-1);
+  &:after {
+    content: "User$";
+    color: $body-color;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: rem(-8);
+    @include font-size(16, 1);
+  }
+}
